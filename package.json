@@ -1,0 +1,22 @@
+{
+  "name": "zerotoproduction",
+  "version": "0.0.1",
+  "description": "awesome karaoke app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/distributethe6ix/zerotoproduction.git"
+  },
+  "author": "virtualized6ix, lianmakesthings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/distributethe6ix/zerotoproduction/issues"
+  },
+  "homepage": "https://github.com/distributethe6ix/zerotoproduction#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
