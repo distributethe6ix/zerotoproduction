@@ -5,7 +5,6 @@ const port = 3000
 
 app.get('/', (req, res) => {
     res.set('Content-Type', 'text/html')
-    //res.send("Hello World")
     res.send(`
     <html>
         <head></head>
