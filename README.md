@@ -11,4 +11,5 @@
 - Break up into container + JavaScript and Go
 - Roadmap
 - Build this to run on Kubernetes
--
+- Continuous Integration
+- Github Actions
