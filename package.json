@@ -2,9 +2,10 @@
   "name": "zerotoproduction",
   "version": "0.0.1",
   "description": "awesome karaoke app",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start": "nodemon index.js",
+    "dev": "nodemon index.mjs",
+    "start": "node index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
