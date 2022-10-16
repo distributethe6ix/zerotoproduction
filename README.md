@@ -19,13 +19,13 @@
 Data is held in a noSQL db in a general pool of songs
 
 ## Types
-- type: number
 0: Song
 1: Artist
 2: Playlist
 
 ### Song
 - id: String
+- type: number
 - title: String
 - year: number
 - genre: String[]
@@ -34,6 +34,7 @@ Data is held in a noSQL db in a general pool of songs
 
 ### Artist
 - id: String
+- type: number
 - name: String
 - type: String
 - gender: String | null
@@ -41,6 +42,7 @@ Data is held in a noSQL db in a general pool of songs
 
 ### Paylist
 - id: String
+- type: number
 - songs: String[]
 
 ## Data Retrieval
