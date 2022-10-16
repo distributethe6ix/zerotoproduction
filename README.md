@@ -28,6 +28,7 @@ Data is held in a noSQL db in a general pool of songs
 - type: number
 - title: String
 - year: number
+- artist: String
 - genre: String[]
 - img-url: String
 - playlist-count: number
