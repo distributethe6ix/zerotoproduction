@@ -23,6 +23,7 @@ Data is held in a noSQL db in a general pool of songs
 - id: String
 - title: String
 - genre: String[]
+- img-url: String
 - playlist-count: number
 
 ### Artist
@@ -30,6 +31,7 @@ Data is held in a noSQL db in a general pool of songs
 - name: String
 - type: String
 - gender: String | null
+- img-url: String
 
 ### Paylist
 - id: String
