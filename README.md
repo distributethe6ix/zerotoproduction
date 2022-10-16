@@ -36,9 +36,8 @@ Data is held in a noSQL db in a general pool of songs
 - id: String
 - type: number
 - name: String
-- type: String
-- gender: String | null
 - img-url: String
+- artist-type: number // `0: group, 1: female, 2: male`
 
 ### Paylist
 - id: String
