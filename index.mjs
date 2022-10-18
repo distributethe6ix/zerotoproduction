@@ -10,10 +10,20 @@ const firestore = new Firestore();
 
 app.get('/', async (req, res) => {
   // Obtain a document reference.
-  const collections = await firestore.listCollections()
-  for (let collection of collections) {
-    console.log(`Found collection with id: ${collection.id}`);
-  }
+  const collection = await firestore.collection('karaoke-me-dev')
+  const docRefs = await collection.listDocuments()
+  let songs = "";
+  const docs = await Promise.all(docRefs.map(d => d.get()))
+  docs.forEach(doc => {
+    songs += `
+    <li>
+      <img src="${doc.get('img-url')}" />
+      <p>${doc.get('title')}</p>
+    </li>
+    `
+    console.log(doc.get('title'))
+  })
+  console.log(songs)
 
   res.set('Content-Type', 'text/html')
   res.send(`
@@ -23,10 +33,7 @@ app.get('/', async (req, res) => {
       <h1>Super Awesome Karaoke Playlist</h1>
       <div>
         <ul>
-          <li>Journey - Don't Stop Believin</li>
-          <li>Aerosmith - I Don't Wanna Miss A Thing</li>
-          <li>Leonard Cohen - Hallelujah</li>
-          <li>Tears for Fears - Everybody wants to rule the world</li>
+          ${songs}
         </ul>
       </div>
     </body>
