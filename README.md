@@ -1,14 +1,17 @@
 # zerotoproduction
 - Website that holds a static list of karaoke songs
-
-### Next time (2022/9/15):
-- More functionality: interactivity
-- Database
 - Containerize
+![](docs/architecture-1.png)
+![](docs/architecture-2.png)
 
-## Next time (2022/?/?):
-- karaoke app building @ KUBEHUDDLE
-- Break up into container + JavaScript and Go
+
+
+### Next time (2022/?/?):
+- Data structure & services
+
+
+## Next next time (2022/?/?):
+- Break up backend
 - Roadmap
 - Build this to run on Kubernetes
 - Continuous Integration
